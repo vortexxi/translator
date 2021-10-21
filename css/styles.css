@@ -1,0 +1,294 @@
+	@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+	*{
+		box-sizing: border-box;
+	}
+
+	html{
+		background-color:#000;
+		overflow: hidden;
+		font-family: 'Hind Siliguri', sans-serif;
+	}
+
+	/************ HEADER ****************/
+
+	.navBar{
+		position: absolute;
+		z-index: 200;
+		background-color: transparent;
+		top:0;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.navBar .tabs{
+		display: flex;
+		justify-content: center;
+	}
+	.navBar .tab{
+		margin:15px;
+		padding: 10px;
+		justify-content: center;
+		text-align: center;
+		display: block;
+	}
+	.navBar .tabs .tab a{
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #FFF;
+		text-shadow: 2px 2px 4px #000000;
+		font-size: 12px;
+	}
+	.navBar .tabs .tab a img{
+		display: block;
+		margin: auto;
+	}
+	.navBar .tabs .tab.is-active a[data-switcher]{
+		background-color: orange;
+	}
+	.navBar .tabs .tab:hover a{
+		color: #ffdfbb;
+	}
+	.navBar .tabs .tab:active{
+		color: #b0aef9;
+	}
+	.navBar .tabs .tab img{
+		width: 32px;
+		height: 32px;
+	}
+	.main{
+		position: absolute;
+		top:50%;
+		left:50%;
+		z-index: 200;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 500px;
+		height: 500px;
+	}
+	.pages{
+		margin: auto;
+		z-index: 210;
+		width: 500px;
+		height: 500px;
+	}
+	.pages .page{
+		display: none;
+		background-color:rgba(0,0,0,0.5);
+		z-index: 210;
+		color: #FFF;
+		width: 500px;
+		height: 500px;
+	}
+	.pages .page.is-active{
+		display: block;
+		z-index: 210;
+		width: 500px;
+		height: 500px;
+	}
+	/************************************/
+
+	html, body {
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.wrapper {
+		position: absolute;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.contenedor{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+
+	#scene { 
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0; }
+
+		img {
+			height: 100%;
+		}
+
+		.visor1{
+			margin:0;
+			padding: 0;
+			position: absolute;
+			top:0;
+			left:0;
+			z-index: 100;
+			background-color: #000;
+			width: 5%;
+			height: 100%;
+		}
+		.visor2{
+			margin:0;
+			padding: 0;
+			position: absolute;
+			top:0;
+			right:0;
+			z-index: 100;
+			background-color: #000;
+			width: 5%;
+			height: 100%;
+		}
+
+		.visor2 a, p{
+			writing-mode: vertical-rl;
+			text-orientation: upright;
+			color: #FFF;
+			margin: auto;
+			padding:5px;
+			text-align: center;
+			align-items: center;
+			display: block;
+			font-size: 12px;
+		}
+		.visor3{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 15px;
+			z-index: 500;
+			display: none;
+		}
+
+		.verticalText{
+			writing-mode: vertical-rl;
+			text-orientation: upright;
+			color: #FFF;
+			height: 100%;
+			margin: auto;
+			padding:5px;
+			text-align: center;
+			vertical-align: center;
+			align-items: center;
+		}
+		.horizontalText{
+			color: #FFF;
+			height: 100%;
+			margin: auto;
+			padding:5px;
+			text-align: center;
+			vertical-align: center;
+			align-items: center;
+		}
+
+		section{
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%, -50%);
+			z-index: 200;
+			width: 700px;
+			min-height: 480px;
+			overflow: scroll;
+		}
+
+		iframe{
+			position: absolute;
+			transform: scale(0.6);
+	   transform-origin: 50% 10%;
+	   top: 0;
+	   left: 0;
+	   z-index: 300;	
+		}
+		.ftembed{
+			max-width: 700px;
+			max-height: 580px;
+			overflow: scroll;
+		}
+		#ytex{
+			font-size: 12px;
+		}
+		.pt-4, .py-4{
+			margin-top:5px !important;
+		}
+		.mt-4, .my-4{
+			margin: 5px !important;
+		}
+		textarea.form-control{
+			height: 200px !important;
+		}
+		footer{
+			position:absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 200;
+			width: 100%;
+			background-color: transparent;
+			display: flex;
+			justify-content: center;
+			margin:15px;
+			padding: 10px;
+		}
+		footer a{
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #FFF;
+			text-shadow: 2px 2px 4px #000000;
+			font-size: 12px;
+		}
+		footer a:hover{
+			color: #ffdfbb;
+		}
+		footer a:active{
+			color: #b0aef9;
+		}
+		footer a img{
+			display: block;
+			margin: auto;
+			width: 32px;
+			height: 32px;
+		}
+
+		@media screen and (max-width: 480px) {
+			.navBar{
+				margin-top: 25px;
+			}
+			.visor1, .visor2{
+				display: none;
+			}
+			.visor3{
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				padding: 3px;
+			}
+			.visor3 a, p{
+			writing-mode: horizontal-tb;
+			color: #FFF;
+			margin: auto;
+			
+			text-align: center;
+			align-items: center;
+			
+			font-size: 12px;
+		}
+		iframe{
+			transform: scale(0.5);
+		}
+			.contenedor{
+
+				margin-top: 50px;
+			}
+			.navBar .tabs .tab a{
+				font-size: 10px;
+			}
+			
+			body {
+		position: fixed;
+	}
+		}
